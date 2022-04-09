@@ -25,7 +25,7 @@ class DerivativeFunctionsTest {
         ArrayList<Dot> dots = new ArrayList<>();
         double bottomBound = -5;
         double upperBound = 5;
-        double step = 0.2;
+        double step = 0.01;
         while (bottomBound < upperBound){
             Dot dot = new Dot();
             dot.x = bottomBound;

@@ -33,7 +33,7 @@ public class DerivativeFunctions {
     public double ctg(double x){
         if(x % Math.PI == 0) return Double.NaN;
         double sinX = sin.invoke(x);
-        double cosX = Math.sqrt(1 - sinX * sinX);
+        double cosX = sin.invoke(x + Math.PI/2);
         return cosX / sinX;
     }
     public double log(double base, double value){
